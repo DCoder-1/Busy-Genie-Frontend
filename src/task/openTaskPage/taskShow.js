@@ -103,17 +103,17 @@ const Show = () => {
         <TimeBox />
       </div>
       <div className="show-btn">
-        <a href="/task">
+        <Link to={"/task"}>
           <button type="" className="btn btn--green" onClick={markAsDonefunc}>
             {markAsDone ? "mark as undone" : "mark as done"}
           </button>
-        </a>
-        <a href="/task">
+        </Link>
+        <Link to={"/task"}>
           {" "}
           <button type="" className="btn btn--green" onClick={deleteHandler}>
             Delete
           </button>
-        </a>
+        </Link>
       </div>
       <div className="ink-pen">
         <img src={InkPen} alt="" className="ink-pen_img" />

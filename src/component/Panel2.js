@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Panel2 = (props) => {
   return (
     <div>
       <li class="navigation__item">
-        <a href="/about" class="navigation__link">
+        <Link to={"/about"} class="navigation__link">
           <span>03</span> About
-        </a>
+        </Link>
       </li>
       <li class="navigation__item" onClick={props.Clicked}>
-        <a href="/" class="navigation__link">
+        <Link to={"/"} className="navigation__link">
           <span>04</span> Logout
-        </a>
+        </Link>
       </li>
     </div>
   );

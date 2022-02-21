@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 const Panel1 = () => {
   return (
     <div>
       <li class="navigation__item">
-        <a href="/signin" class="navigation__link">
+        <Link to={"/signin"} className="navigation__link">
           <span>03</span> Login
-        </a>
+        </Link>
       </li>
       <li class="navigation__item">
-        <a href="/signup" class="navigation__link">
+        <Link to={"/signup"} className="navigation__link">
           <span>04</span> SignUp
-        </a>
+        </Link>
       </li>
     </div>
   );

@@ -4,6 +4,7 @@ import Image from "./../assets/Home/profilephoto.png";
 import Layout from "./../component/layout";
 import Logo from "./../logo/logo.png";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 // import "./Home.css";
 // // import homepng from "./../images/homepng.png";
 // const Home = () => {
@@ -69,7 +70,7 @@ export default function Home() {
             </div>
             {/* <div className="Home-options"> */}
             {/* <button className="btn primary-btn">{""}Get Started </button> */}
-            <a href={user ? "/task" : "/signin"}>
+            <a to={user ? "/task" : "/signin"}>
               <button className="btn btn--white">Lets Go</button>
             </a>
             {/* </div> */}
@@ -104,9 +105,9 @@ export default function Home() {
             </div>
             <div class="card__side card__side--back card__side--back-1">
               <div class="card__cta">
-                <a href="/contactus">
+                <Link to="/contactus">
                   <button className="btn btn--white">Explore</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -131,9 +132,9 @@ export default function Home() {
             </div>
             <div class="card__side card__side--back card__side--back-2">
               <div class="card__cta">
-                <a href={user ? "/task" : "/signin"}>
+                <Link to={user ? "/task" : "/signin"}>
                   <button className="btn btn--white">Exlpore</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -158,9 +159,9 @@ export default function Home() {
             </div>
             <div class="card__side card__side--back card__side--back-3">
               <div class="card__cta">
-                <a href={user ? "/calendar" : "/signin"}>
+                <Link to={user ? "/calendar" : "/signin"}>
                   <button className="btn btn--white">Explore</button>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -181,29 +182,29 @@ export default function Home() {
             <div class="footer__navigation">
               <ul class="footer__list">
                 <li class="footer__item">
-                  <a href="/about" class="footer__link">
+                  <Link to={"/about"} className="footer__link">
                     Company
-                  </a>
+                  </Link>
                 </li>
                 <li class="footer__item">
-                  <a href="/contactus" class="footer__link">
+                  <Link to={"/contactus"} className="footer__link">
                     Contact us
-                  </a>
+                  </Link>
                 </li>
                 {/* <li class="footer__item">
-                  <a href="#" class="footer__link">
+                  <a to="#" class="footer__link">
                     Carrers
                   </a>
                 </li> */}
                 <li class="footer__item">
-                  <a href="#" class="footer__link">
+                  <Link to={"#"} className="footer__link">
                     Privacy policy
-                  </a>
+                  </Link>
                 </li>
                 <li class="footer__item">
-                  <a href="#" class="footer__link">
+                  <Link to={"#"} className="footer__link">
                     Terms
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -211,13 +212,13 @@ export default function Home() {
           <div class="col-1-of-2">
             <p class="footer__copyright">
               Built by{" "}
-              <a href="#" class="footer__link">
+              <Link to={"#"} className="footer__link">
                 Pragya, Shivam and Lakshay
-              </a>{" "}
+              </Link>{" "}
               as their{" "}
-              <a href="#" class="footer__link">
+              <Link to={"#"} className="footer__link">
                 Winter Project
-              </a>
+              </Link>
               . Copyright &copy; by Busy Genie Corporation. All rights reserved.
             </p>
           </div>

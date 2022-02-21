@@ -103,7 +103,7 @@ const Add_task = () => {
               </div>{" "}
             </div>{" "}
             <div className="u-center-text">
-              <a href="/task">
+              <Link to={"/task"}>
                 {" "}
                 <button
                   type="submit"
@@ -112,13 +112,13 @@ const Add_task = () => {
                 >
                   Submit{" "}
                 </button>{" "}
-              </a>
-              <a href="/task">
+              </Link>
+              <Link to={"/task"}>
                 {" "}
                 <button type="" className="btn btn--green">
                   Cancel{" "}
                 </button>{" "}
-              </a>
+              </Link>
             </div>{" "}
           </form>{" "}
         </div>{" "}

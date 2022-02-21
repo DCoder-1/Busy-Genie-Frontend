@@ -18,7 +18,7 @@ const Sidebar = () => {
     <div className="task_input-container-sidebar">
       <div className="task_input-container-sidebar_item task_input-container-sidebar-1">
         {" "}
-        <Link to="/addtask">
+        <Link to={"/addtask"}>
           {" "}
           <img
             src={Plus}
@@ -30,13 +30,13 @@ const Sidebar = () => {
       </div>{" "}
       <div className="task_input-container-sidebar_item task_input-container-sidebar-2">
         {" "}
-        <a href="/calendar">
+        <Link to={"/calendar"}>
           <img
             src={Check}
             alt=""
             className="task_input-container-sidebar_img"
           />{" "}
-        </a>
+        </Link>
         <span className="logo-hover_text">calendar </span>{" "}
       </div>{" "}
       {/* <div className="task_input-container-sidebar_item task_input-container-sidebar-2">
@@ -56,13 +56,13 @@ const Sidebar = () => {
       </div>{" "} */}
       <div className="task_input-container-sidebar_item task_input-container-sidebar-3">
         {" "}
-        <a href="/task/pomodoro">
+        <Link to={"/task/pomodoro"}>
           <img
             src={Trash}
             alt=""
             className="task_input-container-sidebar_img"
           />{" "}
-        </a>
+        </Link>
         <span className="logo-hover_text"> pomodoro clock</span>{" "}
       </div>{" "}
     </div>
