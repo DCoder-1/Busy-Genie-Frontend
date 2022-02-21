@@ -268,6 +268,14 @@ textarea {
 .form_radio-input:checked ~ .form_radio-label .form_radio-button::after {
   opacity: 1; }
 
+.layout-btn {
+  background-color: rgba(0, 255, 255, 0);
+  font-size: 3rem;
+  margin: 0;
+  font-family: oldnewspaper; }
+  .layout-btn:hover {
+    color: #861a0c; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
