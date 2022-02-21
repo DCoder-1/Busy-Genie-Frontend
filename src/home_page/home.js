@@ -70,9 +70,9 @@ export default function Home() {
             </div>
             {/* <div className="Home-options"> */}
             {/* <button className="btn primary-btn">{""}Get Started </button> */}
-            <a to={user ? "/task" : "/signin"}>
+            <Link to={user ? "/task" : "/signin"}>
               <button className="btn btn--white">Lets Go</button>
-            </a>
+            </Link>
             {/* </div> */}
           </div>
           <div className="Home-picture">
@@ -105,7 +105,7 @@ export default function Home() {
             </div>
             <div class="card__side card__side--back card__side--back-1">
               <div class="card__cta">
-                <Link to="/contactus">
+                <Link to={"/contactus"}>
                   <button className="btn btn--white">Explore</button>
                 </Link>
               </div>
