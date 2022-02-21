@@ -42,12 +42,16 @@ const Layout = (props) => {
           <ul class="navigation__list">
             <li class="navigation__item">
               <Link to={"/"} className="navigation__link">
-                <span>01</span> Home
+                <button className="layout-btn">
+                  <span>01</span> Home
+                </button>
               </Link>
             </li>
             <li class="navigation__item">
               <Link to={"/task"} className="navigation__link">
-                <span>02</span> Tasks
+                <button className="layout-btn">
+                  <span>02</span> Tasks
+                </button>
               </Link>
             </li>
             {user ? <Panel2 Clicked={onLogout} /> : <Panel1 />}

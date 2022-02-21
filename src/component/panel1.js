@@ -5,12 +5,16 @@ const Panel1 = () => {
     <div>
       <li class="navigation__item">
         <Link to={"/signin"} className="navigation__link">
-          <span>03</span> Login
+          <button className="layout-btn">
+            <span>03</span> Login
+          </button>
         </Link>
       </li>
       <li class="navigation__item">
         <Link to={"/signup"} className="navigation__link">
-          <span>04</span> SignUp
+          <button className="layout-btn">
+            <span>04</span> SignUp
+          </button>
         </Link>
       </li>
     </div>

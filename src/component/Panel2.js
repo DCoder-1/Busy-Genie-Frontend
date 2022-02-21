@@ -5,12 +5,16 @@ const Panel2 = (props) => {
     <div>
       <li class="navigation__item">
         <Link to={"/about"} class="navigation__link">
-          <span>03</span> About
+          <button className="layout-btn">
+            <span>03</span> About
+          </button>
         </Link>
       </li>
       <li class="navigation__item" onClick={props.Clicked}>
         <Link to={"/"} className="navigation__link">
-          <span>04</span> Logout
+          <button className="layout-btn">
+            <span>04</span> Logout
+          </button>
         </Link>
       </li>
     </div>
